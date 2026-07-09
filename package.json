@@ -1,0 +1,14 @@
+{
+  "name": "bizos",
+  "version": "1.0.3",
+  "description": "BIZOS — Sistemi Operativ i Biznesit. Falas, offline-first, për bizneset e Kosovës.",
+  "private": true,
+  "scripts": {
+    "build": "esbuild js/app.js --bundle --format=iife --target=es2020 --charset=utf8 --outfile=js/bizos.bundle.js",
+    "serve": "npx serve .",
+    "vercel-build": "npm run build && node build-public.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sq" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BIZOS — Sistemi Operativ i Biznesit</title>
+  <meta name="description" content="BIZOS — Sistemi Operativ i Biznesit tuaj. Fatura, klientë, financa, inventar dhe vegla profesionale. 100% falas, offline, pa regjistrim. Krijuar për bizneset e Kosovës." />
+  <meta name="application-name" content="BIZOS" />
+  <meta name="theme-color" content="#09090b" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="BIZOS" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BIZOS — Sistemi Operativ i Biznesit" />
+  <meta property="og:description" content="Menaxho biznesin tënd: fatura, klientë, financa, inventar. Falas dhe offline." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sq_AL" />
+
+  <!-- Design system -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/print.css" media="all" />
+</head>
+<body>
+  <div id="app" aria-live="polite"></div>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+  <div id="print-root" aria-hidden="true"></div>
+
+  <noscript>
+    <div style="padding:48px 24px;text-align:center;font-family:system-ui">
+      <h1 style="font-size:22px;margin-bottom:8px">BIZOS</h1>
+      <p>BIZOS kërkon JavaScript të aktivizuar për të funksionuar.</p>
+    </div>
+  </noscript>
+
+  <!-- Bundle i vetëm (IIFE) — punon edhe kur hapet direkt si skedar (file://).
+       Kodi burimor modular gjendet te js/ ; rindërto me `npm run build`. -->
+  <script src="js/bizos.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "name": "BIZOS — Sistemi Operativ i Biznesit",
+  "short_name": "BIZOS",
+  "description": "Menaxho biznesin tënd: fatura, klientë, financa, inventar dhe vegla profesionale. 100% falas, offline, pa regjistrim. Krijuar për bizneset e Kosovës.",
+  "id": "bizos",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "sq",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "finance"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Faturë e re",
+      "short_name": "Faturë",
+      "description": "Krijo një faturë të re menjëherë",
+      "url": "./index.html#/invoices/new",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Detyrat",
+      "short_name": "Detyrat",
+      "description": "Hap listën e detyrave",
+      "url": "./index.html#/tasks",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Raportet",
+      "short_name": "Raportet",
+      "description": "Shiko raportet financiare",
+      "url": "./index.html#/reports",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
